@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Animated Form 2</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src="https://kit.fontawesome.com/2b5b76d96f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <diV class="center">
+            <div class="header">Login Form</div>
+            <form method="post">
+                <div class="text_field">
+                    <input type="text" required placeholder="Email or Username">
+                    <i class="fas fa-envelope"></i>
+                    <input id="pswrd" type="password" required placeholder="Password">
+                    <i class="fas fa-lock" onclick="show()"></i>
+                    <input type="submit" value="Sign in"> 
+                    <a href="signUp2.html">Forget Password</a>
+
+                </div>
+                
+            </form>
+
+        </diV>
+
+        <script>
+            function show(){
+                var pswrd = document.getElementById('pswrd');
+                var icon = document.querySelector('.fas');
+                if(pswrd.type === "password") {
+                    pswrd.type = "text";
+                    pswrd.style.marginTop = "20px";
+                    icon.style.color = "#7f2092";
+                } else{
+                    pswrd.type = "password";
+                    icon.style.color = "grey";
+                }
+            }
+        </script>
+        
+
+    </body>
+</html>
