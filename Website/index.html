@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Electricvehicles Website</title>
+	<link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+
+<!-- The header section of the ElectricVehicles website -->
+	<header>
+		<div class="main_container" id="home">
+			<div class="navbar">
+					<div class="logo">
+						<a href="#">Electric Vehicles</a> <!-- This section includes the logo design of Ghum Gham -->
+					</div>
+					<div class="navbar_items">
+						<ul>
+							<li><a href="#">home</a></li>
+							<li><a href="pages/about.html">about</a></li>
+							<li><a href="pages/contact.html">contact</a></li>
+							<li><a href="pages/gallery.html">Gallery</a></li>
+							<li><a href="pages/news.html">News</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>	
+	</header>
+		
+	<!-- The main container of the Electric Vehicles content -->	
+	<div "main_container" id="home">
+		<div class="banner_image">
+						
+				</div>
+
+				<!-- This section is about the description of Electric Vehicles -->
+				<div class="about" id="about">
+					<h1 class="title">About Us</h1>
+					<p>Electric Vechicle is about the very expotential rise of trend on Electric vehicles lead by Tesla Ltd. whose CEO is Elon Musk himself. It will provide the potential of the Electric Vehicles and how it is future of automobiles. It is based on advantages and future potential of EVs. Those vehicles are powered not by fuel but collector system by electricity from off of the vehicles, self-contained with a battery, solar panels or an electricity generator.</p>
+					<div class="btn"><a href="#">Learn More</a></div>
+				</div>
+
+				<!-- This section includes the types of services that the Electric Vehicles provides to its customers -->
+				<div class="services" id="services">
+					<h1 class="title">Tesla Services</h1>
+					<p>Electric Vehicles provides some remarkable services to its customers, emphasizing the sustainbility of the environment as much as possible. From the last 16 years, Tesla has been working over the electric car domain and trying its best to deliver the promising outcome through more eco-friendly and robust system of electric vehicles.
+					</p>
+					<div class="diff_services">
+						<div class="diff_services_item">
+							<img src="images/tesla3t.jpg" alt="service_image">
+							<h3 class="sub_title">Eco-Friendly</h3>
+							<p>Electric Vehicles emphasizes the sustainability of enviroment using different eco-friendly measures on their vehicles.
+							</p>
+						</div>
+						<div class="diff_services_item">
+							<img src="images/teslat.jpg" alt="service_image">
+							<h3 class="sub_title">Quality Materials</h3>
+							<p>Best materials used during the production of the vehicles.</p>
+						</div>
+						<div class="diff_services_item">
+							<img src="images/teslaa.jpg" alt="service_image">
+							<h3 class="sub_title">Great design and Comfort</h3>
+							<p>Provide best design looks and also deliver great comfortness for the customers.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- This section is about the subscription and contact to Electric Vehicles -->
+				<div class="contactus" id="contactus">
+					<h1 class="title">contact us</h1>
+					<form name="sign">
+						<div class="form_wrapper">
+							<div class="form_input">
+								<input type="email" name="email" placeholder="Email" id="email">
+							</div>
+							<div class="form_input">
+								<input type="text" name="package" placeholder="Model Name / Number" id="package">
+							</div>
+							<div class="form_input">
+								<textarea name="message" placeholder="Message" id="message"></textarea>
+							</div>
+							<div class="btn">
+								<a href="#" onclick="results()">Submit</a>
+							</div>
+					    </div>
+					</form>
+				</div>      
+		<div class="ourteam" id="ourteam">
+			<h3><span class="highlight">Best</span> Models</h3>
+					<div class="container">
+						<!-- This section is about the popular model of Tesla cars. -->
+						<div class="card">
+							<div class="img">
+								<img src="images/tesla0.jpg">
+							</div>
+							<div class="top-text">
+								<div class="name">P-82 S Model</div>
+								<p>White Tesla Car</p>
+							</div>
+							<div class="bottom-text">
+								<div class="text">P-82 S Model is the one the best model developed by Tesla Company. It was initially released in 2016 and was a quite successful model in South America and other major part of European counteries. </div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="img">
+								<img src="images/tesla1.jpg">
+							</div>
+							<div class="top-text">
+								<div class="name">USA Automobile </div>
+								<p>Tesla Truck</p>
+							</div>
+							<div class="bottom-text">
+								<div class="text">Tesla Truck initially designed to overcome the hard and heavy workload which could not be possible with other models designed by Tesla Company. The quality used in the Tesla Truck is quite interesting and also delivers stylish and comfortness to the customer. It was initially released in 2019 and gain a sweet spot within few weeks of launch in the global electric car market.</div>
+									
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="img">
+								<img src="images/p85.jpg">
+							</div>
+							<div class="top-text">
+								<div class="name">P-85 S Model</div>
+								<p>Red Tesla Car</p>
+							</div>
+							<div class="bottom-text">
+								<div class="text">P-85 S model can be considered one the great design emphasizing the comfort for the customer while driving. The model is available in both red and black color. P-85 S Model was initially launced in 2018 and picked up the face very quickly with its stagering market share on the global electric market.</div>
+							</div>
+					</div>
+	        </div>
+			</div>	
+			<!-- This section is about the footer -->
+		    <div class="footer">
+					<a href="#">© 2020 Anushka GC<br><br>
+					Anushkagc678@gmail.com</a>
+			</div>
+        </div>
+
+<!-- The javascript section of the Electric Vehicles for the contact form -->
+<script type="text/javascript">
+		function results()
+		{
+			var email=document.forms["sign"]["email"].value;
+			var package=document.forms["sign"]["package"].value;
+			var message=document.forms["sign"]["message"].value;
+
+			if (email== "" || package== "" || message== ""){    // when the text field is empty and the sign up button is pressed
+				alert("Please fill out all the text field");
+				return false;
+			}
+
+			else{          //when all the text field is filled and the sign up button is pressed
+				
+				alert("Thank you for the Subscription");
+				clear();
+				function clear()
+				{
+					document.getElementById("email").value = '';
+					document.getElementById("package").value = '';
+					document.getElementById("message").value = '';
+				}
+				return true;	
+			}
+	    }
+</script>
+</body>
+</html>

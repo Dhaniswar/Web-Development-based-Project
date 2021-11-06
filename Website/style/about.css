@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Oswald&family=Roboto&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h1.title{
+	margin-bottom: 20px;
+	color: #444444;
+	font-family: 'Allura', cursive;
+	text-transform: uppercase;
+	font-size: 38px;
+	word-spacing: 25px;
+	letter-spacing: 5px;
+}
+
+p{
+	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #a9a9a9;
+}
+
+.btn a {
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    border: 2px solid #fb2274;
+    color: #fb2274;
+    display: block;
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+.main_container{
+	position: relative;
+}
+
+/* Navigation Bar */
+.navbar{
+	width: 100%;
+	height: 70px;
+	position: absolute;
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background:#070707;
+    box-shadow: 0 3px 20px rgba(black, 0.2);
+	
+}
+
+.logo a{
+	font-family: 'Allura', cursive;
+	font-size: 32px;
+	color: #5b6d9f;
+}
+
+.navbar_items ul{
+	display: flex;
+}
+
+.navbar_items ul li{
+	margin: 0 10px;
+}
+
+.navbar_items ul li a{
+	text-transform: uppercase;
+	color: #fff;
+}
+
+/* banner_image */
+.banner_image{
+    background: url('../images/teslacover.jpg') no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_content{
+	text-align: center;
+	color: #fff;
+}
+
+.banner_content h1{
+	text-transform: uppercase;
+	line-height: 38px;
+	margin-bottom: 15px;
+}
+
+.banner_content h1 span{
+	color: #fb2274;
+}
+
+
+/* About */
+.about,
+.services,
+.contactus{
+	text-align: center;
+	padding: 5% 10%;
+}
+.contactus{
+	background-color: #ffffff;
+	padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.SearchContainer {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+.input-field input{
+	padding: 5px;
+    font-size: 18px;
+    width: 90% !important;
+    border: #f4f4f4 3px solid;
+}
+/* The input text field of the form */
+input[type=text]{
+	
+	border:none;
+	border-bottom: 1px solid #9e9e9e;
+	border-radius: 0;
+	outline: none;
+	height: 3rem;
+	width: 100%;
+	font-size: 16px;
+	margin:0 0 8px 0;
+	padding: 0;
+	box-shadow: none;
+}
+.col h3{
+	font-size: 2.92rem;
+    line-height: 110%;
+    margin: 1.9466666667rem 0 1.168rem 0;
+    font-family: 'Mansalva', cursive;
+    color: #444444;
+}
+.input-field {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+@media only screen and (min-width: 993px){
+	.SearchContainer {
+    width: 70%;
+    }
+}
+
+
+/* our team */
+.ourteam{
+    background: #f2f2f2;
+    
+    text-align: center;
+    height: 65vh;
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+.picture{
+    height: 100%;
+    width: 100%;
+    max-height: 65vh;
+    user-select: none;
+    box-sizing: border-box;
+}
+.picture .sign{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    background-color: gainsboro;
+    position: relative;
+}
+.picture .sign #controlBtn{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-image: url(../images/play.png);
+    background-repeat: no-repeat;
+    z-index: 5;
+    background-size: cover;
+    margin: 5px;
+    cursor: pointer;
+}
+.picture .sign #controlBtn:hover{
+    opacity: .7;
+}
+.picture .sign .picHolder{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.picture .sign .picHolder img{
+    width: 100%;
+    height: 100%;
+
+    max-height: 600px;
+}
+.picture .sign .picHolder .captionText{
+    display: none;
+}
+
+.picture .sign .leftArrow,.picture .sign .rightArrow{
+    width: 50px;
+    background: #00000036;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: background 2.5s;
+    height: 72px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.picture .sign .rightArrow{
+    left: auto;
+    right: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;   /* Gives a shape for the arrow to be used in the image slider for the right side  */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.picture .sign .leftArrow:hover,.picture .sign .rightArrow:hover{
+
+    background: #000000a8;
+    cursor: pointer;
+}
+.picture .arrow{
+    display: inline-block;
+    border: 3px solid white;
+    width: 10px;
+    height: 10px;
+    border-left: none;
+    border-bottom: none;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.picture .arrow.arrowLeft{
+    transform: rotateZ(-135deg);
+}
+.picture .arrow.arrowRight{
+    transform: rotateZ(45deg);
+}
+.picture .sign> .captionTextHolder> .captionText{
+    margin: 0;
+}
+
+.picture .sign #dotsContainer{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+.picture .sign #dotsContainer .dots{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: #bbb;
+    cursor: pointer;
+    transition:background-color 0.5s;
+    position: relative;
+    top:26em;
+}
+.picture .sign #dotsContainer .dots:first-child{
+    margin-left: 0;
+}
+.picture .sign #dotsContainer .dots:hover,.picture .sign #dotsContainer .dots.active{
+    background-color: #717171;;
+}
+.picture .moveLeftCurrentSlide{
+    animation-name: moveLeftCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+
+}
+.picture .moveLeftNextSlide{
+    animation-name: moveLeftNext;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveLeftCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: -100%;opacity: 1;}
+}
+@keyframes moveLeftNext {
+    from {margin-left: 100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+}
+.picture .moveRightCurrentSlide{
+    animation-name: moveRightCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+.picture .moveRightPrevSlide{
+    animation-name: moveRightPrev;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveRightCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: 100%;opacity: 1;}
+}
+@keyframes moveRightPrev {
+    from {margin-left: -100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+}
+.slideTextFromBottom {
+    animation-name: slideTextFromBottom;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+@keyframes slideTextFromBottom {
+    from {opacity: 0;margin-top: 100px}
+    to {opacity: 1;margin-top: 0px;}
+}
+.slideTextFromTop {
+    animation-name: slideTextFromTop;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+@keyframes slideTextFromTop {
+    from {opacity: 0;margin-top: -100px}
+    to {opacity: 1;margin-top: 0px;}
+}
+
+/* Services */
+
+.about,
+.services,
+.contactus,
+.team{
+    text-align: center;
+    padding: 5% 10%;
+}
+
+/* our team */
+.team{
+    
+    height: 100%;
+    display: grid;
+    place-items:center;
+    text-align: center;
+}
+.container{
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card{
+    height: 290px;
+    max-width: 350px;
+    margin:0 20px;
+    background: white;
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+.card:hover{
+    height: 455px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.card .img{
+    height: 200px;
+    width: 100%;
+}
+.card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card .top-text{
+    padding: 5px;
+}
+.card .top-text .name{
+    font-size: 25px;
+    font-weight: 600;
+    color: #202020;
+    margin-bottom: 0.2em;
+}
+.card .top-text p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+}
+.card .bottom-text{
+    padding: 0 20px 10px 20px;
+    margin-top: 5px;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+}
+.card:hover .bottom-text{
+    opacity: 1;
+    visibility: visible;
+
+}
+.card .bottom-text .text{
+    text-align: justify;
+}
+.card .bottom-text .btn{
+    margin:10px 0;
+    text-align: left;
+}
+.card .bottom-text .btn a{
+    text-decoration: none;
+    background: #e74c3c;
+    color: #f2f2f2;
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline-flex;
+    transition: 0.2s;
+    max-width: 6.5vw;
+}
+.card .bottom-text .btn a:hover{
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 978px){
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+
+
+    }
+    .card{
+        max-width: 700px;
+        margin: 20px 0;
+    }
+}
+/* Gives a space between the two div tag */
+.space{
+    margin-top: 10vh;
+}
+
+.ourteam h3{
+    font-size: 2.28rem;
+    line-height: 110%;
+    margin: 1.52rem 0 .912rem 0;
+    font-weight: 400;
+}
+.highlight{
+    color: #fb2274;
+    font-family: 'Mansalva', cursive;
+    font-size: 2em;
+}
+/* footer of Ghum Gham */
+.footer{
+    width: 100%;
+    text-align: center;
+    background: #444444;
+    padding: 20px 0;
+    height: 15vh;
+    margin-top: 5vh;
+    ;
+}
+.footer a{
+    color: #fff;
+    font-size:1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Electric Vehicles Website</title>
+	<link rel="stylesheet" href="../style/contact.css">
+</head>
+<body>
+
+<!-- The header section of the ElectricVehicles website -->
+<header>
+	<div class="main_container" id="home">
+
+		<div class="navbar">
+				<div class="logo">
+					<a href="#">Electric Vehicles</a> <!-- This section includes the logo design of Electric Vehicles -->
+				</div>
+				<div class="navbar_items">
+					<ul>
+						<li><a href="../index.html">home</a></li>
+						<li><a href="about.html">about</a></li>
+						<li><a href="#">contact</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="news.html">News</a></li>
+					</ul>
+				</div>
+		</div>
+
+			<div class="banner_image">
+	
+			</div>
+			<!-- This section is about the description of Electric Vehicles -->
+			<div class="about" id="about">
+				<h1 class="title">About Us</h1>
+				<p>Electric Vechicle is about the very expotential rise of trend on Electric vehicles lead by Tesla Ltd. whose CEO is Elon Musk himself. It will provide the potential of the Electric Vehicles and how it is future of automobiles. It is based on advantages and future potential of EVs. Those vehicles are powered not by fuel but collector system by electricity from off of the vehicles, self-contained with a battery, solar panels or an electricity generator.</p>
+				<div class="btn"><a href="#">Learn More</a></div>
+			</div>
+			<!-- This section is about the contact details of the Electric Vehicles -->
+			<div class="services" id="services">
+				<section id="contact">
+				    <div class="contactcontainer">
+				      <div><h1 class="section-title">Contact <span style="margin-left: 1em;">info</span></h1></div>
+				      <div class="contact-items">
+				        <div class="contact-item">
+				          <div class="contact-info">
+				          	<center>
+				          		<h1>Phone</h1>
+				            	<h2>+1 210 8746589 </h2>
+				            	<h2>+1 212 5484776</h2>
+				          	</center>
+				            
+				          </div>
+				        </div>
+				        <div class="contact-item">
+				          <div class="contact-info">
+				            <h1>Email</h1>
+				            <h2>press@tesla.com</h2>
+				            <h2>EUPress@tesla.com</h2>
+				          </div>
+				        </div>
+				        <div class="contact-item">
+				          <div class="contact-info">
+				          	<center>
+				          		<h1>Address</h1>
+				            	<h2>
+				            		3500 Deer Creek Road<br>
+				            	    Palo Alto, CA 94304</h2>
+				          	</center>
+				            
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+                </section>
+			</div>
+
+			<!-- This section is about the subscription and contact to Electric Vehicles -->
+			<div class="contactus" id="contactus">
+					<h1 class="title">contact us</h1>
+					<form name="sign">
+						<div class="form_wrapper">
+							<div class="form_input">
+								<input type="email" name="email" placeholder="Email" id="email">
+							</div>
+							<div class="form_input">
+								<input type="text" name="package" placeholder="Package Edition" id="package">
+							</div>
+							<div class="form_input">
+								<textarea name="message" placeholder="Message" id="message"></textarea>
+							</div>
+							<div class="btn">
+								<a href="#" onclick="submit()">Submit</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			<!-- This section is about the footer -->
+			<div class="footer">
+					<a href="#">© 2020 Anushka GC<br><br>
+					Anushkagc678@gmail.com</a>
+			</div>
+	</div>	
+</header>
+
+
+<script type="text/javascript">
+		function submit()
+		{
+			var email=document.forms["sign"]["email"].value;
+			var package=document.forms["sign"]["package"].value;
+			var message=document.forms["sign"]["message"].value;
+
+			if (email== "" || package== "" || message== ""){    // when the text field is empty and the sign up button is pressed
+				alert("Please fill out all the text field");
+				return false;
+			}
+
+			else{          //when all the text field is filled and the sign up button is pressed
+				
+				alert("Thank you for the Subscription");
+				clear();
+				function clear()
+				{
+					document.getElementById("email").value = '';
+					document.getElementById("package").value = '';
+					document.getElementById("message").value = '';
+				}
+				return true;	
+			}
+
+	    }
+</script>
+	
+</body>
+</html>
